@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+  @font-face {
+    font-family: 'w95fa';
+    src: url('w95fa-webfont.woff2') format('woff2'),
+      url('w95fa-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  .container {
+    width: 704px;
+  }
+
+  .name {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 700px;
+    height: 52px;
+    background: url('name.png');
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: hidden;
+    outline: none;
+    opacity: 1;
+  }
+
+  .button {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100px;
+    height: 50px;
+    background: url('Button.png');
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: hidden;
+    outline: none;
+  }
+</style>
+
+<head>
+
+  <title>NEW MEDIA at Virginia Tech</title>
+  <link rel="icon" type="image/x-icon" href="favicon.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body style="font-family:w95fa; font-size:48px; color:white; background-color:#00a794;">
+
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <div class="container">
+    <div style="position:absolute; top:25px; left:30px;" class="center">
+      <center>
+
+        <p>
+
+          What Would You Like To Know
+
+        </p>
+        <input style="font-family:w95fa; font-size:48px; color:black; position:absolute; top:100px; left:0px;" id="pass" type="text" value="Condition" class="name" placeholder="Enter Attribute">
+        <input style="position:absolute; top:175px; left:0px;" type="submit" value="" onclick="myFunction()" class="button">
+
+      </center>
+    </div>
+  </div>
+
+  <p style="position:absolute; top:250px; left:30px;">
+
+    Results for: 'Loretta'
+
+  </p>
+  <p style="position:absolute; font-size:36px; top:350px; left:30px;">
+
+    Monetarey Value: $20
+    <br>
+    Sellable Value: $500
+
+  </p>
+  <script>
+
+  function myFunction() {
+    var pass = document.getElementById("pass").value;
+
+    if ((pass == "height") || (pass == "Height")) {
+      window.location.href = "height.html"
+    }
+    else if ((pass == "weight") || (pass == "Weight")) {
+      window.location.href = "weight.html"
+    }
+    else if ((pass == "width") || (pass == "Width")) {
+      window.location.href = "width.html"
+    }
+    else if ((pass == "color") || (pass == "Color")) {
+      window.location.href = "color.html"
+    }
+    else if ((pass == "texture") || (pass == "Texture")) {
+      window.location.href = "texture.html"
+    }
+    else if ((pass == "material") || (pass == "Material")) {
+      window.location.href = "material.html"
+    }
+    else if ((pass == "age") || (pass == "Age")) {
+      window.location.href = "age.html"
+    }
+    else if ((pass == "shape") || (pass == "Shape")) {
+      window.location.href = "shape.html"
+    }
+    else if ((pass == "origin") || (pass == "Origin")) {
+      window.location.href = "origin.html"
+    }
+    else if ((pass == "smell") || (pass == "Smell")) {
+      window.location.href = "smell.html"
+    }
+    else if ((pass == "flammability") || (pass == "Flammability")) {
+      window.location.href = "flammability.html"
+    }
+    else if ((pass == "durability") || (pass == "Durability")) {
+      window.location.href = "durability.html"
+    }
+    else if ((pass == "condition") || (pass == "Condition")) {
+      window.location.href = "condition.html"
+    }
+    else if ((pass == "value") || (pass == "Value")) {
+      window.location.href = "value.html"
+    }
+    else {
+      window.location.href = "tryagain.html"
+    }
+  }
+
+  </script>
+  <div>
+
+    <img src="Left.png" style="position:fixed; bottom:0px; left:0px; width:16px; height:100%;">
+    <img src="Right.png" style="position:fixed; bottom:0px; right:0px; width:12px; height:100%;">
+    <img src="Bottom.png" style="position:fixed; bottom:0px; left:0px; width:100%; height:54px;">
+    <img src="Top.png" style="position:fixed; top:0px; left:0px; width:100%; height:54px;">
+    <img src="File.png" style="position:fixed; top:11px; left:49px; width:37px; height:25px;">
+    <img src="Edit.png" style="position:fixed; top:11px; left:105px; width:40px; height:25px;">
+    <img src="View.png" style="position:fixed; top:11px; left:165px; width:55px; height:25px;">
+    <img src="Help.png" style="position:fixed; top:11px; left:240px; width:50px; height:26px;">
+
+  </div>
+
+</body>
+
+</html>

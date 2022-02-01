@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+  @font-face {
+
+    font-family: 'w95fa';
+    src: url('w95fa-webfont.woff2') format('woff2'),
+      url('w95fa-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+  }
+</style>
+<form style="font-family:w95fa; font-size:48px; color:white;" class="slidecontainer">
+
+  <input style="position:absolute; top:125px; left:30px; " type="range" min="1" max="7" value="7" class="slider" id="myRange">
+  <p style="position:absolute; top:25px; left:30px;">
+
+    Number of Players:
+    <span id="demo"></span>
+
+  </p>
+  <input style="position:absolute; top:200px; left:30px;" class="button" type="submit" value="" onClick="myFunction()" />
+  <script>
+    function myFunction() {
+      if (document.getElementById('myRange')[whole_number].value = 1) {
+        window.location.href = "1.html";
+      }
+    }
+  </script>
+
+</form>
+<style>
+  .slidecontainer {
+    width: 704px;
+    /* Width of the outside container */
+  }
+
+  /* The slider itself */
+  .slider {
+    -webkit-appearance: none;
+    /* Override default CSS styles */
+    appearance: none;
+    width: 704px;
+    /* Full-width */
+    height: 54px;
+    /* Specified height */
+    background: url('Sliderback.png');
+    /* Grey background */
+    outline: none;
+    /* Remove outline */
+    opacity: 1;
+    /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s;
+    /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+  }
+
+  .button {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100px;
+    height: 50px;
+    background: url('Button.png');
+  }
+
+  /* Mouse-over effects */
+  .slider:hover {
+    opacity: 1;
+    /* Fully shown on mouse-over */
+  }
+
+  /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    /* Override default look */
+    appearance: none;
+    width: 100px;
+    /* Set a specific slider handle width */
+    height: 50px;
+    /* Slider handle height */
+    background: url('slider.png');
+    /* Green background */
+    cursor: pointer;
+    /* Cursor on hover */
+  }
+
+  .slider::-moz-range-thumb {
+    width: 100px;
+    /* Set a specific slider handle width */
+    height: 50px;
+    /* Slider handle height */
+    background: url('slider.png');
+    /* Green background */
+    cursor: pointer;
+    /* Cursor on hover */
+  }
+</style>
+
+<head>
+
+  <title>Hi-Lo Score Keeper</title>
+  <link rel="icon" type="image/x-icon" href="favicon.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body style="font-family:w95fa; font-size:20px; color:white; background-color:#00a794;">
+
+<p style="position:absolute; top:400px; left:700px;">
+
+Try Again.
+
+</p>
+  <script>
+    var slider = document.getElementById("myRange");
+    var output = document.getElementById("demo");
+    output.innerHTML = slider.value;
+
+    slider.oninput = function() {
+      output.innerHTML = this.value;
+    }
+  </script>
+  <img src="Left.png" style="position:fixed; bottom:0px; left:0px; width:16px; height:100%;">
+  <img src="Right.png" style="position:fixed; bottom:0px; right:0px; width:12px; height:100%;">
+  <img src="Bottom.png" style="position:fixed; bottom:0px; left:0px; width:100%; height:54px;">
+  <img src="Top.png" style="position:fixed; top:0px; left:0px; width:100%; height:54px;">
+  <img src="File.png" style="position:fixed; top:11px; left:49px; width:37px; height:25px;">
+  <img src="Edit.png" style="position:fixed; top:11px; left:105px; width:40px; height:25px;">
+  <img src="View.png" style="position:fixed; top:11px; left:165px; width:55px; height:25px;">
+  <img src="Help.png" style="position:fixed; top:11px; left:240px; width:50px; height:26px;">
+
+</body>

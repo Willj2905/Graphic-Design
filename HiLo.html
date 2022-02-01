@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+
+  @font-face {
+    font-family: 'w95fa';
+    src: url('w95fa-webfont.woff2') format('woff2'),
+      url('w95fa-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  .slidecontainer {
+    width: 704px;
+  }
+  .slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 704px;
+    height: 54px;
+    background: url('Sliderback.png');
+    outline: none;
+    opacity: 1;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+  .button {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100px;
+    height: 50px;
+    background: url('Button.png');
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: hidden;
+  }
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100px;
+    height: 50px;
+    background: url('slider.png');
+    cursor: pointer;
+  }
+  .slider::-moz-range-thumb {
+    width: 100px;
+    height: 50px;
+    background: url('slider.png');
+    cursor: pointer;
+  }
+
+</style>
+<head>
+
+  <title>Hi-Lo Score Keeper</title>
+  <link rel="icon" type="image/x-icon" href="favicon.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body style="font-family:w95fa; font-size:20px; color:white; background-color:#00a794;">
+
+  <form style="font-family:w95fa; font-size:48px; color:white;" class="slidecontainer">
+
+    <input style="position:absolute; top:125px; left:30px; " type="range" min="1" max="7" value="7" class="slider" id="myRange">
+    <p style="position:absolute; top:25px; left:30px;">
+
+      Number of Players:
+      <span id="demo"></span>
+
+    </p>
+    <input style="position:absolute; top:200px; left:30px;" class="button" type="submit" value="" onClick="myFunction();" />
+
+  </form>
+  <script>
+
+    var slider = document.getElementById("myRange");
+    var output = document.getElementById("demo");
+    output.innerHTML = slider.value;
+    slider.oninput = function change() {
+      output.innerHTML = this.value;
+    }
+    function myFunction() {
+    var pass = document.getElementById("myRange").value;
+    if (pass == 1) {
+           window.location.href = "1.html"
+         }
+         if (pass == "2") {
+           window.location.href = "01.25.22_3H.html"
+         }
+         if (pass == "3") {
+           window.location.href = "01.25.22_3L.html"
+         }
+    }
+
+  </script>
+  <img src="Left.png" style="position:fixed; bottom:0px; left:0px; width:16px; height:100%;">
+  <img src="Right.png" style="position:fixed; bottom:0px; right:0px; width:12px; height:100%;">
+  <img src="Bottom.png" style="position:fixed; bottom:0px; left:0px; width:100%; height:54px;">
+  <img src="Top.png" style="position:fixed; top:0px; left:0px; width:100%; height:54px;">
+  <img src="File.png" style="position:fixed; top:11px; left:49px; width:37px; height:25px;">
+  <img src="Edit.png" style="position:fixed; top:11px; left:105px; width:40px; height:25px;">
+  <img src="View.png" style="position:fixed; top:11px; left:165px; width:55px; height:25px;">
+  <img src="Help.png" style="position:fixed; top:11px; left:240px; width:50px; height:26px;">
+
+</body>
