@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>Hi-Lo Score Keeper</title>
+  <link rel="icon" type="image/x-icon" href="favicon.png">
+  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+
+  <div class="slidecontainer">
+
+    <input type="range" min="1" max="7" value="4" class="slider" id="myRange">
+    <p style="position:absolute; top:25px; left:30px;">
+
+      Number of Players:
+      <span id="demo"></span>
+
+    </p>
+    <input style="position:absolute; top:200px; left:30px;" class="button" type="submit" value="" onClick="players();" />
+
+  </div>
+  <div class="text" style="position:absolute; top:300px; left:30px;">
+    Input Player Names:
+    <div class="smalltext" style="position:absolute; width:300px; top:75px;">Player 1</div>
+    <input type="text" class="player1" placeholder="Enter Name" value="">
+    <div class="smalltext" style="position:absolute; width:300px; top:150px;">Player 2</div>
+    <input type="text" class="player2" placeholder="Enter Name" value="">
+    <div class="smalltext" style="position:absolute; width:300px; top:225px;">Player 3</div>
+    <input type="text" class="player3" placeholder="Enter Name" value="">
+    <div class="smalltext" style="position:absolute; width:300px; top:300px;">Player 4</div>
+    <input type="text" class="player4" placeholder="Enter Name" value="">
+    <input type="submit" class="button" value="" style="position:absolute; top:400px; left:0px;">
+  </div>
+  <div class="left"></div>
+  <div class="right"></div>
+  <div class="bottom"></div>
+  <div class="top"></div>
+  <div class="file"></div>
+  <div class="edit"></div>
+  <div class="view"></div>
+  <div class="help"></div>
+  <script src="function.js"></script>
+
+</body>

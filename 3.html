@@ -15,7 +15,7 @@
 
   <div class="slidecontainer">
 
-    <input type="range" min="1" max="7" value="7" class="slider" id="myRange">
+    <input type="range" min="1" max="7" value="3" class="slider" id="myRange">
     <p style="position:absolute; top:25px; left:30px;">
 
       Number of Players:
@@ -26,7 +26,14 @@
 
   </div>
 <div class="text" style="position:absolute; top:300px; left:30px;">
-Insufficient Players, Try Again
+Input Player Names:
+<div class="smalltext" style="position:absolute; width:300px; top:75px;">Player 1</div>
+<input type="text" class="player1" placeholder="Enter Name" value="">
+<div class="smalltext" style="position:absolute; width:300px; top:150px;">Player 2</div>
+<input type="text" class="player2" placeholder="Enter Name" value="">
+<div class="smalltext" style="position:absolute; width:300px; top:225px;">Player 3</div>
+<input type="text" class="player3" placeholder="Enter Name" value="">
+ <input type="submit" class="button" value="" style="position:absolute; top:400px; left:0px;" onclick="play();">
 </div>
   <div class="left"></div>
   <div class="right"></div>
