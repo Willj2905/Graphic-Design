@@ -13,28 +13,339 @@
 
 <body>
 
-  <div class="slidecontainer">
-
-    <input type="range" min="1" max="7" value="3" class="slider" id="myRange">
-    <p style="position:absolute; top:25px; left:30px;">
-
-      Number of Players:
-      <span id="demo"></span>
-
-    </p>
-    <input style="position:absolute; top:200px; left:30px;" class="button" type="submit" value="" onClick="players();" />
-
+  <div class="score">
+    <table class="scoresheet">
+      <tr>
+        <th class="names">Players</th>
+        <th class="rounds">Bets</th>
+        <th class="rounds">7</th>
+        <th class="rounds">Bets</th>
+        <th class="rounds">6</th>
+        <th class="rounds">Bets</th>
+        <th class="rounds">5</th>
+        <th class="rounds">Bets</th>
+        <th class="rounds">4</th>
+        <th class="rounds">Bets</th>
+        <th class="rounds">3</th>
+        <th class="rounds">Bets</th>
+        <th class="rounds">2</th>
+        <th class="rounds">Bets</th>
+        <th class="rounds">1</th>
+        <th class="rounds">Bets</th>
+        <th class="rounds">2</th>
+        <th class="rounds">Bets</th>
+        <th class="rounds">3</th>
+        <th class="rounds">Bets</th>
+        <th class="rounds">4</th>
+        <th class="rounds">Bets</th>
+        <th class="rounds">5</th>
+        <th class="rounds">Bets</th>
+        <th class="rounds">6</th>
+        <th class="rounds">Bets</th>
+        <th class="rounds">7</th>
+      </tr>
+      <tr>
+        <td class="names">
+          <input id="player1" type="text" class="player" placeholder="Enter Name" value="">
+          <div id="name1" class="name1"></div>
+          <input type="submit" value="" id="check1" style="top:60px; left:105px" class="check" onclick="yes1()">
+          <input type="submit" value="" id="x1" style="top:60px; left:130px" class="x" onclick="no1()">
+        </td>
+        <td class="rounds">
+          <input id="bet1" type="number" class="bet" value="">
+          <div id="score1" class="score1"></div>
+        </td>
+        <td class="rounds">
+          <div id="playscore1" class="score1"></div>
+        </td>
+        <td class="rounds">
+          <input id="bet8" type="number" class="bet" value="">
+          <div id="score8" class="score1"></div>
+        </td>
+        <td class="rounds">
+          <div id="playscore8" class="score1"></div>
+        </td>
+        <td class="rounds">
+          <input id="bet15" type="number" class="bet" value="">
+          <div id="score15" class="score1"></div>
+        </td>
+        <td class="rounds">
+          <div id="playscore15" class="score1"></div>
+        </td>
+        <td class="rounds">
+          <input id="bet22" type="number" class="bet" value="">
+          <div id="score22" class="score1"></div>
+        </td>
+        <td class="rounds">
+          <div id="playscore22" class="score1"></div>
+        </td>
+        <td class="rounds">
+          <input id="bet29" type="number" class="bet" value="">
+          <div id="score29" class="score1"></div>
+        </td>
+        <td class="rounds">
+          <div id="playscore29" class="score1"></div>
+        </td>
+        <td class="rounds">
+          <input id="bet36" type="number" class="bet" value="">
+          <div id="score36" class="score1"></div>
+        </td>
+        <td class="rounds">
+          <div id="playscore36" class="score1"></div>
+        </td>
+        <td class="rounds">
+          <input id="bet43" type="number" class="bet" value="">
+          <div id="score43" class="score1"></div>
+        </td>
+        <td class="rounds">
+          <div id="playscore43" class="score1"></div>
+        </td>
+        <td class="rounds">
+          <input id="bet50" type="number" class="bet" value="">
+          <div id="score50" class="score1"></div>
+        </td>
+        <td class="rounds">
+          <div id="playscore50" class="score1"></div>
+        </td>
+        <td class="rounds">
+          <input id="bet57" type="number" class="bet" value="">
+          <div id="score57" class="score1"></div>
+        </td>
+        <td class="rounds">
+          <div id="playscore57" class="score1"></div>
+        </td>
+        <td class="rounds">
+          <input id="bet64" type="number" class="bet" value="">
+          <div id="score64" class="score1"></div>
+        </td>
+        <td class="rounds">
+          <div id="playscore64" class="score1"></div>
+        </td>
+        <td class="rounds">
+          <input id="bet71" type="number" class="bet" value="">
+          <div id="score71" class="score1"></div>
+        </td>
+        <td class="rounds">
+          <div id="playscore71" class="score1"></div>
+        </td>
+        <td class="rounds">
+          <input id="bet78" type="number" class="bet" value="">
+          <div id="score78" class="score1"></div>
+        </td>
+        <td class="rounds">
+          <div id="playscore78" class="score1"></div>
+        </td>
+        <td class="rounds">
+          <input id="bet85" type="number" class="bet" value="">
+          <div id="score85" class="score1"></div>
+        </td>
+        <td class="rounds">
+          <div id="playscore85" class="score1"></div>
+        </td>
+      </tr>
+      <tr>
+        <td class="names">
+          <input id="player2" type="text" class="player" placeholder="Enter Name" value="">
+          <div id="name2" class="name1"></div>
+          <input type="submit" value="" id="check2" style="top:100px; left:105px" class="check" onclick="yes2()">
+          <input type="submit" value="" id="x2" style="top:100px; left:130px" class="x" onclick="no2()">
+        </td>
+        <td class="rounds">
+          <input id="bet2" type="number" class="bet" value="">
+          <div id="score2" class="score1"></div>
+        </td>
+        <td class="rounds">
+          <div id="playscore2" class="score1"></div>
+        </td>
+        <td class="rounds">
+          <input id="bet9" type="number" class="bet" value="">
+          <div id="score9" class="score1"></div>
+        </td>
+        <td class="rounds">
+          <div id="playscore9" class="score1"></div>
+        </td>
+        <td class="rounds">
+          <input id="bet16" type="number" class="bet" value="">
+          <div id="score16" class="score1"></div>
+        </td>
+        <td class="rounds">
+          <div id="playscore16" class="score1"></div>
+        </td>
+        <td class="rounds">
+          <input id="bet23" type="number" class="bet" value="">
+          <div id="score23" class="score1"></div>
+        </td>
+        <td class="rounds">
+          <div id="playscore23" class="score1"></div>
+        </td>
+        <td class="rounds">
+          <input id="bet30" type="number" class="bet" value="">
+          <div id="score30" class="score1"></div>
+        </td>
+        <td class="rounds">
+          <div id="playscore30" class="score1"></div>
+        </td>
+        <td class="rounds">
+          <input id="bet37" type="number" class="bet" value="">
+          <div id="score37" class="score1"></div>
+        </td>
+        <td class="rounds">
+          <div id="playscore37" class="score1"></div>
+        </td>
+        <td class="rounds">
+          <input id="bet44" type="number" class="bet" value="">
+          <div id="score44" class="score1"></div>
+        </td>
+        <td class="rounds">
+          <div id="playscore44" class="score1"></div>
+        </td>
+        <td class="rounds">
+          <input id="bet51" type="number" class="bet" value="">
+          <div id="score51" class="score1"></div>
+        </td>
+        <td class="rounds">
+          <div id="playscore51" class="score1"></div>
+        </td>
+        <td class="rounds">
+          <input id="bet58" type="number" class="bet" value="">
+          <div id="score58" class="score1"></div>
+        </td>
+        <td class="rounds">
+          <div id="playscore58" class="score1"></div>
+        </td>
+        <td class="rounds">
+          <input id="bet65" type="number" class="bet" value="">
+          <div id="score65" class="score1"></div>
+        </td>
+        <td class="rounds">
+          <div id="playscore65" class="score1"></div>
+        </td>
+        <td class="rounds">
+          <input id="bet72" type="number" class="bet" value="">
+          <div id="score72" class="score1"></div>
+        </td>
+        <td class="rounds">
+          <div id="playscore72" class="score1"></div>
+        </td>
+        <td class="rounds">
+          <input id="bet79" type="number" class="bet" value="">
+          <div id="score79" class="score1"></div>
+        </td>
+        <td class="rounds">
+          <div id="playscore79" class="score1"></div>
+        </td>
+        <td class="rounds">
+          <input id="bet86" type="number" class="bet" value="">
+          <div id="score86" class="score1"></div>
+        </td>
+        <td class="rounds">
+          <div id="playscore86" class="score1"></div>
+        </td>
+      </tr>
+      <tr>
+        <td class="names">
+          <input id="player3" type="text" class="player" placeholder="Enter Name" value="">
+          <div id="name3" class="name1"></div>
+          <input type="submit" value="" id="check3" style="top:140px; left:105px" class="check" onclick="yes3()">
+          <input type="submit" value="" id="x3" style="top:140px; left:130px" class="x" onclick="no3()">
+        </td>
+        <td class="rounds">
+          <input id="bet3" type="number" class="bet" value="">
+          <div id="score3" class="score1"></div>
+        </td>
+        <td class="rounds">
+          <div id="playscore3" class="score1"></div>
+        </td>
+        <td class="rounds">
+          <input id="bet10" type="number" class="bet" value="">
+          <div id="score10" class="score1"></div>
+        </td>
+        <td class="rounds">
+          <div id="playscore10" class="score1"></div>
+        </td>
+        <td class="rounds">
+          <input id="bet17" type="number" class="bet" value="">
+          <div id="score17" class="score1"></div>
+        </td>
+        <td class="rounds">
+          <div id="playscore17" class="score1"></div>
+        </td>
+        <td class="rounds">
+          <input id="bet24" type="number" class="bet" value="">
+          <div id="score24" class="score1"></div>
+        </td>
+        <td class="rounds">
+          <div id="playscore24" class="score1"></div>
+        </td>
+        <td class="rounds">
+          <input id="bet31" type="number" class="bet" value="">
+          <div id="score31" class="score1"></div>
+        </td>
+        <td class="rounds">
+          <div id="playscore31" class="score1"></div>
+        </td>
+        <td class="rounds">
+          <input id="bet38" type="number" class="bet" value="">
+          <div id="score38" class="score1"></div>
+        </td>
+        <td class="rounds">
+          <div id="playscore38" class="score1"></div>
+        </td>
+        <td class="rounds">
+          <input id="bet45" type="number" class="bet" value="">
+          <div id="score45" class="score1"></div>
+        </td>
+        <td class="rounds">
+          <div id="playscore45" class="score1"></div>
+        </td>
+        <td class="rounds">
+          <input id="bet52" type="number" class="bet" value="">
+          <div id="score52" class="score1"></div>
+        </td>
+        <td class="rounds">
+          <div id="playscore52" class="score1"></div>
+        </td>
+        <td class="rounds">
+          <input id="bet59" type="number" class="bet" value="">
+          <div id="score59" class="score1"></div>
+        </td>
+        <td class="rounds">
+          <div id="playscore59" class="score1"></div>
+        </td>
+        <td class="rounds">
+          <input id="bet66" type="number" class="bet" value="">
+          <div id="score66" class="score1"></div>
+        </td>
+        <td class="rounds">
+          <div id="playscore66" class="score1"></div>
+        </td>
+        <td class="rounds">
+          <input id="bet73" type="number" class="bet" value="">
+          <div id="score73" class="score1"></div>
+        </td>
+        <td class="rounds">
+          <div id="playscore73" class="score1"></div>
+        </td>
+        <td class="rounds">
+          <input id="bet80" type="number" class="bet" value="">
+          <div id="score80" class="score1"></div>
+        </td>
+        <td class="rounds">
+          <div id="playscore80" class="score1"></div>
+        </td>
+        <td class="rounds">
+          <input id="bet87" type="number" class="bet" value="">
+          <div id="score87" class="score1"></div>
+        </td>
+        <td class="rounds">
+          <div id="playscore87" class="score1"></div>
+        </td>
+      </tr>
+    </table>
   </div>
-<div class="text" style="position:absolute; top:300px; left:30px;">
-Input Player Names:
-<div class="smalltext" style="position:absolute; width:300px; top:75px;">Player 1</div>
-<input type="text" class="player1" placeholder="Enter Name" value="">
-<div class="smalltext" style="position:absolute; width:300px; top:150px;">Player 2</div>
-<input type="text" class="player2" placeholder="Enter Name" value="">
-<div class="smalltext" style="position:absolute; width:300px; top:225px;">Player 3</div>
-<input type="text" class="player3" placeholder="Enter Name" value="">
- <input type="submit" class="button" value="" style="position:absolute; top:400px; left:0px;" onclick="play();">
-</div>
+  <input id="playbutton" class="button" type="submit" value="" onclick="play()" style="position: absolute; bottom: 70px; left: 30px;"></input>
+  <input id="nextbutton" class="button" type="submit" value="" onclick="next()" style="position: absolute; bottom: 70px; left: 30px;"></input>
+
   <div class="left"></div>
   <div class="right"></div>
   <div class="bottom"></div>

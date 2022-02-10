@@ -10,6 +10,53 @@ body {
   background-color: #00a794;
 }
 
+#nextbutton {
+  display: none;
+}
+
+.check {
+  width: 22.5px;
+  height: 17.5px;
+  background: url("Check.png");
+  background-size: contain;
+  position: absolute;
+  display: none;
+  border: none;
+}
+
+.x {
+  width: 17.5px;
+  height: 17.5px;
+  background: url("X.png");
+  background-size: contain;
+  position: absolute;
+  display: none;
+  border: none;
+}
+
+.bet {
+  text-align: center;
+  display: none;
+  font-family: w95fa;
+  font-size: 18px;
+  color: black;
+  background: url('Name2.png');
+  width: 54px;
+  height: 26px;
+  border: none;
+  background-size: contain;
+}
+
+.score1 {
+  display: none;
+  position: absolute;
+  font-family: w95fa;
+  font-size: 24px;
+  color: white;
+  width: 40px;
+  height: 26px;
+}
+
 .text {
   font-family: w95fa;
   color: white;
@@ -122,16 +169,10 @@ body {
 }
 
 .button {
-  -webkit-appearance: none;
-  appearance: none;
   width: 100px;
   height: 50px;
   background: url('Button.png');
-  border-top-style: hidden;
-  border-right-style: hidden;
-  border-left-style: hidden;
-  border-bottom-style: hidden;
-  outline: none;
+  border: none;
 }
 
 .slidecontainer {
@@ -172,142 +213,222 @@ body {
   cursor: pointer;
 }
 
-.player1 {
+.player {
+  display: block;
   font-family: w95fa;
   font-size: 18px;
-  background: url('name.png');
-  -webkit-appearance: none;
-  appearance: none;
+  color: black;
+  background: url('Name3.png');
+  width: 108px;
+  height: 25px;
+  border: none;
+  background-size: contain;
+}
+
+.name1 {
   position: absolute;
-  top: 100px;
+  font-family: w95fa;
+  font-size: 24px;
+  color: white;
+  width: 108px;
+  height: 26px;
+}
+
+
+.scoresheet {
+  font-family: w95fa;
+  font-size: 24px;
+  position: absolute;
+  top: 70px;
+  left: 30px;
+  color: white;
+}
+
+.names {
+  text-align: left;
+  font-family: w95fa;
+  font-size: 24px;
+  color: white;
+  width: 150px;
+  height: 36px;
+}
+.rounds {
+  text-align: center;
+  font-family: w95fa;
+  font-size: 24px;
+  color: white;
+  width: 50px;
+  height: 36px;
+}
+
+.boxcontainer {
+  position: fixed;
+  top:0px;
   left: 0px;
-  background-size: contain;
-  height: 26px;
-  width: 356px;
-  border-top-style: hidden;
-  border-right-style: hidden;
-  border-left-style: hidden;
-  border-bottom-style: hidden;
-  outline: none;
-  opacity: 1;
+ background-size: 100%;
+ width: 100%
 }
 
-.player2 {
-  font-family: w95fa;
-  font-size: 18px;
-  background: url('name.png');
-  -webkit-appearance: none;
-  appearance: none;
-  position: absolute;
-  top: 175px;
+.box1 {
+  position: relative;
+  float: left;
+  top: 0px;
   left: 0px;
-  background-size: contain;
-  height: 26px;
-  width: 356px;
-  border-top-style: hidden;
-  border-right-style: hidden;
-  border-left-style: hidden;
-  border-bottom-style: hidden;
-  outline: none;
-  opacity: 1;
+  margin: -5px;
+  border: 10px solid black;
+  background-color: white;
 }
 
-.player3 {
-  font-family: w95fa;
-  font-size: 18px;
-  background: url('name.png');
-  -webkit-appearance: none;
-  appearance: none;
-  position: absolute;
-  top: 250px;
-  left: 0px;
-  background-size: contain;
-  height: 26px;
-  width: 356px;
-  border-top-style: hidden;
-  border-right-style: hidden;
-  border-left-style: hidden;
-  border-bottom-style: hidden;
-  outline: none;
-  opacity: 1;
+.box2 {
+  position: relative;
+  float: left;
+  top: 0px;
+  left:0px;
+  margin: -5px;
+  border: 10px solid black;
+  background-color: red;
 }
 
-.player4 {
-  font-family: w95fa;
-  font-size: 18px;
-  background: url('name.png');
-  -webkit-appearance: none;
-  appearance: none;
-  position: absolute;
-  top: 325px;
-  left: 0px;
-  background-size: contain;
-  height: 26px;
-  width: 356px;
-  border-top-style: hidden;
-  border-right-style: hidden;
-  border-left-style: hidden;
-  border-bottom-style: hidden;
-  outline: none;
-  opacity: 1;
+.box3 {
+  position: relative;
+  top:0px;
+  left:0px;
+  float: left;
+  margin: -5px;
+  border: 10px solid black;
+  background-color: yellow;
 }
 
-.player5 {
-  font-family: w95fa;
-  font-size: 18px;
-  background: url('name.png');
-  -webkit-appearance: none;
-  appearance: none;
-  position: absolute;
-  top: 100px;
-  left: 400px;
-  background-size: contain;
-  height: 26px;
-  width: 356px;
-  border-top-style: hidden;
-  border-right-style: hidden;
-  border-left-style: hidden;
-  border-bottom-style: hidden;
-  outline: none;
-  opacity: 1;
+.box4 {
+  position: relative;
+  top:0px;
+  left:0px;
+  float: left;
+  margin: -5px;
+  border: 10px solid black;
+  background-color: blue;
 }
 
-.player6 {
-  font-family: w95fa;
-  font-size: 18px;
-  background: url('name.png');
-  -webkit-appearance: none;
-  appearance: none;
-  position: absolute;
-  top: 175px;
-  left: 400px;
-  background-size: contain;
-  height: 26px;
-  width: 356px;
-  border-top-style: hidden;
-  border-right-style: hidden;
-  border-left-style: hidden;
-  border-bottom-style: hidden;
-  outline: none;
-  opacity: 1;
+.box5 {
+  position: relative;
+  top:0px;
+  left:0px;
+  float: left;
+  margin: -5px;
+  border: 10px solid black;
+  background-color: #00a794;
 }
 
-.player7 {
-  font-family: w95fa;
-  font-size: 18px;
-  background: url('name.png');
-  -webkit-appearance: none;
-  appearance: none;
+.link {
   position: absolute;
-  top: 250px;
-  left: 400px;
-  background-size: contain;
-  height: 26px;
-  width: 356px;
-  border-top-style: hidden;
-  border-right-style: hidden;
-  border-left-style: hidden;
-  border-bottom-style: hidden;
-  outline: none;
-  opacity: 1;
+  top:414px;
+  left:505px;
+  width:101px;
+  height:62px;
+  background: url("Link.png");
+  background-size: cover;
+}
+
+.cont {
+  display: flex;
+  flex-flow: column;
+  height: 100vh;
+}
+
+.lefty {
+  display: flex;
+  flex-flow: row;
+  flex: 3;
+}
+
+.center {
+  display: flex;
+  flex-flow: row;
+  flex: .5;
+}
+
+.righty {
+  display: flex;
+  flex-flow: row;
+  flex: 2;
+}
+
+.top1 {
+  background-color: white;
+  flex: 1;
+}
+
+.top2 {
+  background-color: yellow;
+  flex: 1;
+}
+
+.top3 {
+  background-color: cyan;
+  flex: 1;
+}
+
+.top4 {
+  background-color: lime;
+  flex: 1;
+}
+
+.top5 {
+  background-color: magenta;
+  flex: 1;
+}
+
+.top6 {
+  background-color: red;
+  flex: 1;
+}
+
+.top7 {
+  background-color: blue;
+  flex: 1;
+}
+
+.middle1 {
+  background-color: blue;
+  flex: 1;
+}
+
+.middle2 {
+  background-color: black;
+  flex: 1;
+}
+
+.middle3 {
+  background-color: magenta;
+  flex: 1;
+}
+
+.middle4 {
+  background-color: cyan;
+  flex: 1;
+}
+
+.middle5 {
+  background-color: white;
+  flex: 1;
+}
+
+.bottom1 {
+  background-color: navy;
+  flex: 1;
+}
+
+.bottom2 {
+  background-color: white;
+  flex: 1;
+}
+
+.bottom3 {
+  background-color: indigo;
+  flex: 1;
+}
+
+.bottom4 {
+  background-color: black;
+  flex: 3;
 }

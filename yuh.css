@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.boxcontainer {
+  position: fixed;
+  top:0px;
+  left: 0px;
+ background-size: 100%;
+}
+
+.box1 {
+  position: relative;
+  float: left;
+  top: 0px;
+  left: 0px;
+  margin: -5px;
+  border: 10px solid black;
+  background-color: white;
+}
+
+.box2 {
+  position: relative;
+  float: left;
+  top: 0px;
+  left:0px;
+  margin: -5px;
+  border: 10px solid black;
+  background-color: red;
+}
+
+.box3 {
+  position: relative;
+  top:0px;
+  left:0px;
+  float: left;
+  margin: -5px;
+  border: 10px solid black;
+  background-color: yellow;
+}
+
+.box4 {
+  position: relative;
+  top:0px;
+  left:0px;
+  float: left;
+  margin: -5px;
+  border: 10px solid black;
+  background-color: blue;
+}
