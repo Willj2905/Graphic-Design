@@ -3271,6 +3271,7 @@ function writeit2(from, e) {
         document.getElementById("a6-3").style.display = "block";
         document.getElementById("r2-2").style.display = "block";
       } else if (tw == "3") {
+        talk();
         conv = conv + 1;
         path = path + "3";
         document.getElementById("a2-1").style.display = "none";
@@ -3330,6 +3331,9 @@ function writeit2(from, e) {
         document.getElementById("a4-2").style.display = "none";
         document.getElementById("a4-3").style.display = "none";
         document.getElementById("r4-1").style.display = "block";
+        document.getElementById("resp31").style.display = "block";
+        document.getElementById("a11-1").style.display = "block";
+        document.getElementById("a11-2").style.display = "block";
       } else if (tw == "2") {
         talk();
         conv = conv + 1;
@@ -3338,14 +3342,17 @@ function writeit2(from, e) {
         document.getElementById("a4-2").style.display = "none";
         document.getElementById("a4-3").style.display = "none";
         document.getElementById("r4-2").style.display = "block";
+        document.getElementById("resp32").style.display = "block";
+        document.getElementById("a13-1").style.display = "block";
+        document.getElementById("a13-2").style.display = "block";
       } else if (tw == "3") {
-        talk();
         conv = conv + 1;
         path = path + "3";
         document.getElementById("a4-1").style.display = "none";
         document.getElementById("a4-2").style.display = "none";
         document.getElementById("a4-3").style.display = "none";
         document.getElementById("r4-3").style.display = "block";
+        leave();
       }
     }
   } else if (conv == 2) {
@@ -3454,6 +3461,50 @@ function writeit2(from, e) {
         document.getElementById("r10-2").style.display = "block";
       }
     }
+    else if (path == "31") {
+      if (tw == "1") {
+        conv = conv + 1;
+        path = path + "1";
+        document.getElementById("a11-1").style.display = "none";
+        document.getElementById("a11-2").style.display = "none";
+        document.getElementById("r11-1").style.display = "block";
+        leave();
+        setTimeout(() => {
+          document.getElementById("tear").style.display = "block"}, 2000);
+      } else if (tw == "2") {
+        talk();
+        conv = conv + 1;
+        path = path + "2";
+        document.getElementById("a11-1").style.display = "none";
+        document.getElementById("a11-2").style.display = "none";
+        document.getElementById("resp312").style.display = "block";
+        document.getElementById("r11-2").style.display = "block";
+        document.getElementById("a12-1").style.display = "block";
+        document.getElementById("a12-2").style.display = "block";
+      }
+    }
+    else if (path == "32") {
+      if (tw == "1") {
+        talk();
+        conv = conv + 1;
+        path = path + "1";
+        document.getElementById("a13-1").style.display = "none";
+        document.getElementById("a13-2").style.display = "none";
+        document.getElementById("r13-1").style.display = "block";
+        document.getElementById("resp321").style.display = "block";
+        document.getElementById("a14-1").style.display = "block";
+        document.getElementById("a14-2").style.display = "block";
+      } else if (tw == "2") {
+        talk();
+        conv = conv + 1;
+        path = path + "2";
+        document.getElementById("a13-1").style.display = "none";
+        document.getElementById("a13-2").style.display = "none";
+        document.getElementById("r13-2").style.display = "block";
+        setTimeout(() => {
+        window.location.href = "Index.html"}, 3000);
+      }
+    }
   } else if (conv == 3) {
     if (path == "111") {
       if (tw == "1") {
@@ -3465,7 +3516,6 @@ function writeit2(from, e) {
         document.getElementById("a7-3").style.display = "none";
         window.location.href = "https://classicreload.com/zork-i.html";
       } else if (tw == "2") {
-        talk();
         conv = conv + 1;
         path = path + "2";
         document.getElementById("a7-1").style.display = "none";
@@ -3473,7 +3523,6 @@ function writeit2(from, e) {
         document.getElementById("a7-3").style.display = "none";
         window.location.href = "https://pacman.live/play.html";
       } else if (tw == "3") {
-        talk();
         conv = conv + 1;
         path = path + "2";
         document.getElementById("a7-1").style.display = "none";
@@ -3483,7 +3532,6 @@ function writeit2(from, e) {
       }
     } else if (path == "121") {
       if (tw == "1") {
-        talk();
         conv = conv + 1;
         path = path + "1";
         document.getElementById("a8-1").style.display = "none";
@@ -3498,6 +3546,44 @@ function writeit2(from, e) {
         document.getElementById("a8-2").style.display = "none";
         document.getElementById("resp1212").style.display = "block";
         document.getElementById("r8-2").style.display = "block";
+      }
+    }
+    else if (path == "312") {
+      if (tw == "1") {
+        conv = conv + 1;
+        path = path + "1";
+        document.getElementById("a12-1").style.display = "none";
+        document.getElementById("a12-2").style.display = "none";
+        document.getElementById("r12-1").style.display = "block";
+        window.location.href = "https://www.youtube.com/watch?v=lZqqMtW87hU";
+      } else if (tw == "2") {
+        conv = conv + 1;
+        path = path + "2";
+        document.getElementById("a12-1").style.display = "none";
+        document.getElementById("a12-2").style.display = "none";
+        document.getElementById("r12-2").style.display = "block";
+        window.location.href = "https://www.youtube.com/watch?v=lZqqMtW87hU";
+      }
+    }
+    else if (path == "321") {
+      if (tw == "1") {
+        talk();
+        conv = conv + 1;
+        path = path + "1";
+        document.getElementById("a14-1").style.display = "none";
+        document.getElementById("a14-2").style.display = "none";
+        document.getElementById("r14-1").style.display = "block";
+        document.getElementById("resp3211").style.display = "block";
+        window.location.href = "https://www.amazon.com/Terminator-Arnold-Schwarzenegger/dp/B00153ZC8Q";
+      } else if (tw == "2") {
+        talk();
+        conv = conv + 1;
+        path = path + "2";
+        document.getElementById("a14-1").style.display = "none";
+        document.getElementById("a14-2").style.display = "none";
+        document.getElementById("r14-2").style.display = "block";
+        document.getElementById("resp3212").style.display = "block";
+        window.location.href = "https://www.amazon.com/Terminator-Arnold-Schwarzenegger/dp/B00153ZC8Q";
       }
     }
   }
