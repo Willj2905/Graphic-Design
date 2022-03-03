@@ -23,9 +23,6 @@ slider.oninput = function() {
   output.innerHTML = this.value;
 }
 
-
-const timeout = setTimeout(talk, 5000);
-
 function talk() {
   document.getElementById("fullmouth").style.display = "none";
   document.getElementById("talkmouth").style.display = "block";
@@ -3352,7 +3349,8 @@ function writeit2(from, e) {
         document.getElementById("a4-2").style.display = "none";
         document.getElementById("a4-3").style.display = "none";
         document.getElementById("r4-3").style.display = "block";
-        leave();
+        setTimeout(() => {
+        document.getElementById("dude").className = "trackstar"}, 2000);
       }
     }
   } else if (conv == 2) {
