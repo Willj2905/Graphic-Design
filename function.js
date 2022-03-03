@@ -3574,7 +3574,8 @@ function writeit2(from, e) {
         document.getElementById("a14-2").style.display = "none";
         document.getElementById("r14-1").style.display = "block";
         document.getElementById("resp3211").style.display = "block";
-        window.location.href = "https://www.amazon.com/Terminator-Arnold-Schwarzenegger/dp/B00153ZC8Q";
+        setTimeout(() => {
+        window.location.href = "https://www.amazon.com/Terminator-Arnold-Schwarzenegger/dp/B00153ZC8Q"}, 2000);
       } else if (tw == "2") {
         talk();
         conv = conv + 1;
@@ -3583,7 +3584,8 @@ function writeit2(from, e) {
         document.getElementById("a14-2").style.display = "none";
         document.getElementById("r14-2").style.display = "block";
         document.getElementById("resp3212").style.display = "block";
-        window.location.href = "https://www.amazon.com/Terminator-Arnold-Schwarzenegger/dp/B00153ZC8Q";
+        setTimeout(() => {
+        window.location.href = "https://www.amazon.com/Terminator-Arnold-Schwarzenegger/dp/B00153ZC8Q"}, 2000);
       }
     }
   }
