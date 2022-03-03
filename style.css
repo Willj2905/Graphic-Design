@@ -14,6 +14,539 @@ body {
   display: none;
 }
 
+#r1-1 {
+  display: none;
+}
+
+#r1-2 {
+  display: none;
+}
+
+#r1-3 {
+  display: none;
+}
+
+.trackstar {
+  opacity: 0;
+  position: fixed;
+  right: 0px;
+  bottom: 0px;
+  display: block;
+  animation: runner 3.5s linear 1;
+}
+
+@keyframes runner {
+  0% {
+    opacity: 1;
+    transform:  translateX(0px) translateY(0px);
+  }
+
+  5% {
+    transform: translateX(50px) translateY(-50px);
+  }
+
+  10% {
+    transform:  translateX(100px) translateY(0px);
+  }
+
+  15% {
+    transform: translateX(150px) translateY(-50px);
+  }
+
+  20% {
+    transform:  translateX(200px) translateY(0px);
+  }
+
+  25% {
+    transform:  translateX(250px) translateY(-50px);
+  }
+
+  30% {
+    transform: translateX(300px) translateY(0px);
+  }
+
+  35% {
+    transform:  translateX(350px) translateY(-50px);
+  }
+
+  40% {
+    transform: translateX(400px) translateY(0px);
+  }
+
+  45% {
+    transform:  translateX(450px) translateY(-50px);
+  }
+
+  50% {
+    transform:  translateX(500px) translateY(0px);
+  }
+
+  55% {
+    transform: translateX(550px) translateY(-50px);
+  }
+
+  60% {
+    transform:  translateX(600px) translateY(0px);
+  }
+
+  65% {
+    transform: translateX(650px) translateY(-50px);
+  }
+
+  70% {
+    transform:  translateX(700px) translateY(0px);
+  }
+
+  75% {
+    transform:  translateX(750px) translateY(-50px);
+  }
+
+  80% {
+    transform: translateX(800px) translateY(0px);
+  }
+
+  85% {
+    transform:  translateX(850px) translateY(-50px);
+  }
+
+  90% {
+    transform: translateX(900px) translateY(0px);
+  }
+
+  95% {
+    transform:  translateX(950px) translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform:  translateX(1000px) translateY(0px);
+  }
+}
+
+.face {
+  background: url("Face.png");
+  background-size: contain;
+  position: fixed;
+  bottom: 100px;
+  right: 70px;
+  width: 510px;
+  height: 600px;
+}
+
+@keyframes blink1 {
+  .5% {
+    opacity: 0;
+  }
+  .6% {
+    opacity: 1;
+  }
+  .7% {
+    opacity: 0;
+  }
+  .8% {
+    opacity: 1;
+  }
+  4.5% {
+    opacity: 0;
+  }
+  4.6% {
+    opacity: 1;
+  }
+  15.5% {
+    opacity: 0;
+  }
+  15.6% {
+    opacity: 1;
+  }
+  15.7% {
+    opacity: 0;
+  }
+  15.8% {
+    opacity: 1;
+  }
+  19.5% {
+    opacity: 0;
+  }
+  19.6% {
+    opacity: 1;
+  }
+  27.5% {
+    opacity: 0;
+  }
+  27.6% {
+    opacity: 1;
+  }
+  35.5% {
+    opacity: 0;
+  }
+  35.6% {
+    opacity: 1;
+  }
+  41.5% {
+    opacity: 0;
+  }
+  41.6% {
+    opacity: 1;
+  }
+  41.7% {
+    opacity: 0;
+  }
+  41.8% {
+    opacity: 1;
+  }
+  50.5% {
+    opacity: 0;
+  }
+  50.6% {
+    opacity: 1;
+  }
+  56.5% {
+    opacity: 0;
+  }
+  56.6% {
+    opacity: 1;
+  }
+  56.7% {
+    opacity: 0;
+  }
+  56.8% {
+    opacity: 1;
+  }
+  61.5% {
+    opacity: 0;
+  }
+  61.6% {
+    opacity: 1;
+  }
+  67.5% {
+    opacity: 0;
+  }
+  67.6% {
+    opacity: 1;
+  }
+  72.5% {
+    opacity: 0;
+  }
+  72.6% {
+    opacity: 1;
+  }
+  72.7% {
+    opacity: 0;
+  }
+  72.8% {
+    opacity: 1;
+  }
+  79.5% {
+    opacity: 0;
+  }
+  79.6% {
+    opacity: 1;
+  }
+  84.5% {
+    opacity: 0;
+  }
+  84.6% {
+    opacity: 1;
+  }
+  90.5% {
+    opacity: 0;
+  }
+  90.6% {
+    opacity: 1;
+  }
+  90.7% {
+    opacity: 0;
+  }
+  90.8% {
+    opacity: 1;
+  }
+  90.9% {
+    opacity: 0;
+  }
+  91% {
+    opacity: 1;
+  }
+  91.1% {
+    opacity: 0;
+  }
+  91.4% {
+    opacity: 1;
+  }
+  91.5% {
+    opacity: 0;
+  }
+  91.8% {
+    opacity: 1;
+  }
+  91.9% {
+    opacity: 0;
+  }
+  92.2% {
+    opacity: 1;
+  }
+  92.3% {
+    opacity: 0;
+  }
+  92.4% {
+    opacity: 1;
+  }
+  92.5% {
+    opacity: 0;
+  }
+  92.6% {
+    opacity: 1;
+  }
+  92.7% {
+    opacity: 0;
+  }
+  92.8% {
+    opacity: 1;
+  }
+  99.9% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.eye1 {
+  background-color: white;
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 550px;
+  right: 250px;
+  animation: blink1 120s step-end infinite normal;
+}
+
+.eye2 {
+  background-color: white;
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 550px;
+  right: 340px;
+  animation: blink1 120s step-end infinite normal;
+}
+
+.blink1 {
+  background-color: white;
+  position: fixed;
+  width: 60px;
+  height: 30px;
+  bottom: 550px;
+  right: 250px;
+}
+
+.blink2 {
+  background-color: white;
+  position: fixed;
+  width: 60px;
+  height: 30px;
+  bottom: 550px;
+  right: 340px;
+}
+
+.closemouth {
+  opacity: 0;
+  animation: talk2 .15s step-end infinite alternate;
+}
+
+@keyframes talk2 {
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.close {
+    background-color: white;
+    position: fixed;
+    bottom: 430px;
+    right: 250px;
+    width: 150px;
+    height: 30px;
+}
+
+.openmouth {
+  animation: talk1 .15s step-end infinite alternate;
+}
+
+@keyframes talk1 {
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.open1 {
+  background-color: white;
+  position: fixed;
+  bottom: 400px;
+  right: 280px;
+  width: 90px;
+  height: 30px;
+}
+
+.open2 {
+  background-color: white;
+  position: fixed;
+  bottom: 430px;
+  right: 250px;
+  width: 30px;
+  height: 30px;
+}
+
+.open3 {
+  background-color: white;
+  position: fixed;
+  bottom: 430px;
+  right: 370px;
+  width: 30px;
+  height: 30px;
+}
+
+.open4 {
+  background-color: white;
+  position: fixed;
+  bottom: 460px;
+  right: 250px;
+  width: 150px;
+  height: 30px;
+}
+
+.talkmouth {
+  display: none;
+}
+
+.mouth {
+  background-color: white;
+  position: fixed;
+  bottom: 400px;
+  right: 280px;
+  width: 90px;
+  height: 30px;
+}
+
+.smi1 {
+  background-color: white;
+  position: fixed;
+  bottom: 430px;
+  right: 250px;
+  width: 30px;
+  height: 30px;
+}
+
+.smi2 {
+  background-color: white;
+  position: fixed;
+  bottom: 430px;
+  right: 370px;
+  width: 30px;
+  height: 30px;
+}
+
+.frown1 {
+  display: none;
+  background-color: white;
+  position: fixed;
+  bottom: 400px;
+  right: 250px;
+  width: 30px;
+  height: 30px;
+}
+
+.frown2 {
+  display: none;
+  background-color: white;
+  position: fixed;
+  bottom: 400px;
+  right: 370px;
+  width: 30px;
+  height: 30px;
+}
+
+.frown3 {
+  display: none;
+  background-color: white;
+  position: fixed;
+  bottom: 430px;
+  right: 280px;
+  width: 90px;
+  height: 30px;
+}
+
+.tear {
+  display: none;
+  background-color: white;
+  position: fixed;
+  bottom: 490px;
+  right: 400px;
+  width: 30px;
+  height: 60px;
+}
+
+.blocker {
+  background-color: black;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100px;
+}
+
+textarea#setter {
+  left: -1000px;
+  position: absolute;
+}
+
+.cursor {
+  font-size: 36px;
+  background-color: white;
+  color: white;
+  position: relative;
+  opacity: 1;
+  animation: blink .5s step-end infinite alternate;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+#terminal {
+  position: fixed;
+  background-color: black;
+  bottom: 70px;
+  left: 30px;
+  width: 100%;
+  cursor: text;
+  height: 45px;
+  overflow: hidden;
+}
+
+#writer {
+  font-size: 36px;
+  font-family: w95fa;
+  font-weight: bold;
+  color: white;
+}
+
+#getter {
+  margin: 5px;
+}
+
 .check {
   width: 22.5px;
   height: 17.5px;
@@ -35,6 +568,7 @@ body {
 }
 
 .bet {
+  vertical-align: bottom;
   text-align: center;
   display: none;
   font-family: w95fa;
@@ -61,6 +595,22 @@ body {
   font-family: w95fa;
   color: white;
   font-size: 48px;
+}
+
+.convotext {
+  font-weight: bold;
+  font-family: w95fa;
+  color: white;
+  font-size: 36px;
+  position: absolute;
+}
+.convoresponse {
+  font-weight: bold;
+  font-family: w95fa;
+  color: white;
+  font-size: 36px;
+  position: absolute;
+  display: none;
 }
 
 .smalltext {
@@ -108,6 +658,16 @@ body {
   right: 0px;
   width: 12px;
   height: 100%;
+}
+
+.home {
+  background: url('Home.png');
+  background-size: 100% 100%;
+  position: fixed;
+  top: 5px;
+  right: 15px;
+  width: 40px;
+  height: 40px;
 }
 
 .file {
@@ -234,7 +794,6 @@ body {
   height: 26px;
 }
 
-
 .scoresheet {
   font-family: w95fa;
   font-size: 24px;
@@ -252,6 +811,7 @@ body {
   width: 150px;
   height: 36px;
 }
+
 .rounds {
   text-align: center;
   font-family: w95fa;
@@ -263,10 +823,10 @@ body {
 
 .boxcontainer {
   position: fixed;
-  top:0px;
+  top: 0px;
   left: 0px;
- background-size: 100%;
- width: 100%
+  background-size: 100%;
+  width: 100%
 }
 
 .box1 {
@@ -283,7 +843,7 @@ body {
   position: relative;
   float: left;
   top: 0px;
-  left:0px;
+  left: 0px;
   margin: -5px;
   border: 10px solid black;
   background-color: red;
@@ -291,8 +851,8 @@ body {
 
 .box3 {
   position: relative;
-  top:0px;
-  left:0px;
+  top: 0px;
+  left: 0px;
   float: left;
   margin: -5px;
   border: 10px solid black;
@@ -301,8 +861,8 @@ body {
 
 .box4 {
   position: relative;
-  top:0px;
-  left:0px;
+  top: 0px;
+  left: 0px;
   float: left;
   margin: -5px;
   border: 10px solid black;
@@ -311,8 +871,8 @@ body {
 
 .box5 {
   position: relative;
-  top:0px;
-  left:0px;
+  top: 0px;
+  left: 0px;
   float: left;
   margin: -5px;
   border: 10px solid black;
@@ -321,10 +881,10 @@ body {
 
 .link {
   position: absolute;
-  top:414px;
-  left:505px;
-  width:101px;
-  height:62px;
+  top: 414px;
+  left: 505px;
+  width: 101px;
+  height: 62px;
   background: url("Link.png");
   background-size: cover;
 }
